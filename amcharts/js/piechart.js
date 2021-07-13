@@ -820,7 +820,8 @@ am4core.ready(function() {
 
 
     // Add label
-    chart.innerRadius = 90;
+    chart.innerRadius = 70;
+    chart.radius = am4core.percent(70);
     var label = chart.seriesContainer.createChild(am4core.Label);
     label.text = 1;
     label.horizontalCenter = "middle";
