@@ -362,13 +362,13 @@ am4core.ready(function() {
       ];
 
 
-    createSeries("Likes", "Likes", "https://felicity2724.github.io/testforfbe/amcharts/svg/like.svg");
-    createSeries("Love", "Love",'https://felicity2724.github.io/testforfbe/amcharts/svg/love.svg');
-    createSeries("Care", "Care", "https://felicity2724.github.io/testforfbe/amcharts/svg/care.svg");
-    createSeries("Haha", "Haha", 'https://felicity2724.github.io/testforfbe/amcharts/svg/haha.svg');
-    createSeries("Wow", "Wow", "https://felicity2724.github.io/testforfbe/amcharts/svg/wow.svg");
-    createSeries("Sad", "Sad","https://felicity2724.github.io/testforfbe/amcharts/svg/sad.svg");
-    createSeries("Angry", "Angry","https://felicity2724.github.io/testforfbe/amcharts/svg/angry.svg");
+    createSeries("Likes", "Likes", "https://felicity2724.github.io/testforfbe/htmls/svg/like.svg");
+    createSeries("Love", "Love",'https://felicity2724.github.io/testforfbe/htmls/svg/love.svg');
+    createSeries("Care", "Care", "https://felicity2724.github.io/testforfbe/htmls/svg/care.svg");
+    createSeries("Haha", "Haha", 'https://felicity2724.github.io/testforfbe/htmls/svg/haha.svg');
+    createSeries("Wow", "Wow", "https://felicity2724.github.io/testforfbe/htmls/svg/wow.svg");
+    createSeries("Sad", "Sad","https://felicity2724.github.io/testforfbe/htmls/svg/sad.svg");
+    createSeries("Angry", "Angry","https://felicity2724.github.io/testforfbe/htmls/svg/angry.svg");
     
 
     
