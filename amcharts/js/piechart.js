@@ -861,7 +861,7 @@ am4core.ready(function() {
     
     loop();
 
-  
+    chart.responsive.enabled = true;
     
   }); // end am4core.ready()
   
