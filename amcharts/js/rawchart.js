@@ -1187,3 +1187,71 @@ loop();
 "enabled": true
 }
 } );
+
+
+/**
+ * ---------------------------------------
+ * This demo was created using amCharts 4.
+ *
+ * For more information visit:
+ * https://www.amcharts.com/
+ *
+ * Documentation is available at:
+ * https://www.amcharts.com/docs/v4/
+ * ---------------------------------------
+ */
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+// Add data
+chart.data = [{
+  "country": "Lithuania",
+  "litres": 501.9
+}, {
+  "country": "Czech Republic",
+  "litres": 301.9
+}, {
+  "country": "Ireland",
+  "litres": 201.1
+}, {
+  "country": "Germany",
+  "litres": 165.8
+}, {
+  "country": "Australia",
+  "litres": 139.9
+}, {
+  "country": "Austria",
+  "litres": 128.3
+}, {
+  "country": "UK",
+  "litres": 99
+}, {
+  "country": "Belgium",
+  "litres": 60
+}, {
+  "country": "The Netherlands",
+  "litres": 50
+}];
+
+// Add and configure Series
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+pieSeries.labels.template.disabled = true;
+pieSeries.ticks.template.disabled = true;
+
+chart.legend = new am4charts.Legend();
+chart.legend.position = "right";
+chart.legend.itemContainers.template.togglable = false;
+chart.legend.itemContainers.template.events.on("hit", function(ev) {
+  var slice = ev.target.dataItem.dataContext.slice;
+  pieSeries.slices.each(function(item) {
+    if (item != slice) {
+      item.isActive = false;
+    }
+    else {
+      slice.isActive = !slice.isActive;
+    }
+  });
+});
