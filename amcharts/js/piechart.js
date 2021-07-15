@@ -847,6 +847,7 @@ am4core.ready(function() {
     chart.legend.position = "right";
     chart.legend.itemContainers.template.togglable = false;
     chart.legend.maxWidth = 300;
+    chart.legend.minWidth = 30;
     chart.legend.itemContainers.template.events.on("hit", function(ev) {
       var slice = ev.target.dataItem.dataContext.slice;
       pieSeries.slices.each(function(item) {
