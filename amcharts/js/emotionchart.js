@@ -386,7 +386,7 @@ am4core.ready(function() {
 
 
     var title = chart.titles.create();
-    title.text = "各家媒體在一年中獲得的心情回復總和";
+    title.text = "各個媒體專頁在2020年獲得的心情回應總和";
     title.fontSize = 20;
     title.marginTop = 20;
     title.marginBottom = 20;
