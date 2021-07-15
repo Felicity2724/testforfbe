@@ -383,7 +383,7 @@ am4core.ready(function() {
     chart.cursor.maxTooltipDistance = -1; 
     // chart.legend = new am4charts.Legend();
     
-
+    chart.responsive.enabled = true;
 
     var title = chart.titles.create();
     title.text = "各個媒體專頁在2020年獲得的心情回應總和";
