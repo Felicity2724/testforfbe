@@ -843,6 +843,27 @@ am4core.ready(function() {
         currentMonth = 1;
       return data;
     }
+    chart.legend = new am4charts.Legend();
+    chart.legend.position = "right";
+    chart.legend.itemContainers.template.togglable = false;
+    chart.legend.itemContainers.template.events.on("hit", function(ev) {
+      var slice = ev.target.dataItem.dataContext.slice;
+      pieSeries.slices.each(function(item) {
+        if (item != slice) {
+          item.isActive = false;
+        }
+        else {
+          slice.isActive = !slice.isActive;
+        }
+      });
+    });
+
+    pieSeries.labels.template.disabled = true;
+    pieSeries.ticks.template.disabled = true;
+    
+    // Disable tooltips
+    // pieSeries.slices.template.tooltipText = "";
+
 
    
     function loop() {
