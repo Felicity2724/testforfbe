@@ -351,16 +351,35 @@ am4core.ready(function() {
       return series;
     }
     
-    chart.colors.list = [
-        am4core.color("#CECFD6"),
-        am4core.color("#EC9E41"),
-        am4core.color("#7F38EC"),
-        am4core.color("#76AF57"),
-        am4core.color("#F2EC5F"),
-        am4core.color("#2B60DE"),
-        am4core.color("#E82341"),
-      ];
+    // chart.colors.list = [
+    //     am4core.color("#B0D3E9"),
+    //     am4core.color("#5B62B8"),
+    //     am4core.color("#CD6EC9"),
+    //     am4core.color("#939AE1"),
+    //     am4core.color("#D4B271"),
+    //     am4core.color("#E9E4AC"),
+    //     am4core.color("#E2BBA5"),
+    //   ];
 
+      // chart.colors.list = [
+      //   am4core.color("#6871D5"),
+      //   am4core.color("#7C69D6"),
+      //   am4core.color("#CD6EC9"),
+      //   am4core.color("#CE6FC9"),
+      //   am4core.color("#CF8E6D"),
+      //   am4core.color("#86D880"),
+      //   am4core.color("#7AB5D8"),
+      // ];
+
+      chart.colors.list = [
+        am4core.color("#7AB5D8"),
+        am4core.color("#6971D5"),
+        am4core.color("#9B6AD5"),
+        am4core.color("#CC6EC8"),
+        am4core.color("#CD6F6B"),
+        am4core.color("#D5B172"),
+        am4core.color("#ADDA77"),
+      ];
 
       createSeries("Likes", "Likes", "https://felicity2724.github.io/testforfbe/amcharts/svg/like.svg");
       createSeries("Love", "Love",'https://felicity2724.github.io/testforfbe/amcharts/svg/love.svg');
